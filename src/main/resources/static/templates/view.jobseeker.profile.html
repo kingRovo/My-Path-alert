@@ -1,0 +1,368 @@
+<link rel="stylesheet" href="https://static.licdn.com/sc/h/br/e5f7dey6qd6ogtlcygkj2j7zt">
+<link rel="stylesheet" href="https://static.licdn.com/sc/h/br/7wwsuzq8ypctt24b973gr089n">
+<link rel="stylesheet" href="https://static.licdn.com/sc/h/br/6x2ymwyjoslvfumll21syppf7">
+
+<style>
+	.axe-violation--level-1:not(:focus):not(:hover) {
+		background-image: repeating-linear-gradient(
+				135deg,
+				transparent,
+				transparent 10%,
+				hsla(0, 0%, 88%, 1.00) 10%,
+				hsla(0, 0%, 62%, 1.00) 15%,
+				hsla(0, 0%, 38%, 1.00) 20%,
+				transparent 20%,
+				transparent 35%
+		) !important;
+	}
+
+	.axe-violation--level-2:not(:focus):not(:hover) {
+		background-image: repeating-linear-gradient(
+				135deg,
+				transparent,
+				transparent 25%,   /* make transparent portion somewhat wider than total stripe width */
+				hsla(60, 79%, 59%, 1.00) 25%,
+				hsla(60, 79%, 59%, 1.00) 30%,
+				hsla(166, 44%, 65%, 1.00) 30%,
+				hsla(166, 44%, 65%, 1.00) 35%,
+				hsla(240, 26%, 50%, 1.00) 35%,
+				hsla(240, 26%, 50%, 1.00) 40%
+		) !important;
+	}
+
+	.axe-violation--level-3:not(:focus):not(:hover) {
+		background-image: repeating-linear-gradient(
+				135deg,
+				transparent,
+				transparent 0.5em,
+				hsla(60, 79%, 59%, 1.00) 0.5em,
+				hsla(60, 79%, 59%, 1.00) 1em,
+				hsla(240, 26%, 50%, 1.00) 1em,
+				hsla(240, 26%, 50%, 1.00) 1.5em
+		) !important;
+	}
+
+	.axe-violation--replaced-element:not(:focus):not(:hover) {
+		box-shadow:
+				0 0 0em 0.35em hsla(240, 26%, 50%, 1.00) inset,
+				0 0 0em 0.35em hsla(60, 79%, 59%, 1.00),
+				0 0 0em 0.70em hsla(240, 26%, 50%, 1.00) !important;
+
+		/* Scale down slightly so box shadow is visible */
+		transition-duration: 0.3s !important;
+		transition-timing-function: ease-in-out !important;
+		transform: scale(0.9) !important;
+	}
+
+</style>
+
+<div id="profile-wrapper" class="pv-profile-wrapper ">
+
+	<div class="bg-img__zero-height-container">
+		<div class="bg-img__visible-content header-medium " style="background-image: url('../images/');">
+			<div style="height:220px;" class="bg-img__cropper"></div>
+			<!---->
+		</div>
+	</div>
+
+
+
+
+	<div class="pv-content profile-view-grid neptune-grid two-column ghost-animate-in ">
+		<!---->
+		<div>
+			<!---->
+			<section id="ember2673" class="pv-profile-section artdeco-container-card pv-top-card-section ember-view"><!---->
+					<div class="pv-top-card-section__overflow-wrapper pv-top-card-section__right-corner-action pv-top-card-section__overflow-wrapper--self">
+
+						<div ng-if="type == 'jobseeker'" id="ember2682" class="dropdown pv-top-card-overflow closed ember-view">
+							<button type="button" ng-click="toUpdateProfile()" class=" button-primary-medium org-hover-button ember-view">
+								Update Profile
+							</button>
+							<!---->
+						</div>
+					</div>
+
+
+
+				<!---->
+				<!---->
+				<!---->
+				<div class="pv-top-card-section__header">
+					<div class="pv-top-card-section__photo-wrapper EntityPhoto-circle-8">
+						<label for="member-photo-edit-upload-input" class="visually-hidden">
+							Profile photo
+						</label>
+
+						<div id="ember2701" class="pv-top-card-section__edit-photo profile-photo-edit ember-view">
+							<button data-control-name="edit_profile_photo" class="profile-photo-edit__edit-btn" data-ember-action="" data-ember-action-2702="2702">
+								<img src={{jobseeker.picture}} class="profile-photo-edit__preview" alt="Edit photo" height="128" width="128">
+								<span class="profile-photo-edit__edit-icon svg-icon-wrap"><li-icon aria-hidden="true" type="pencil-icon" size="small"><svg viewBox="0 0 24 24" width="24px" height="24px" x="0" y="0" preserveAspectRatio="xMinYMin meet" class="artdeco-icon"><g class="small-icon" style="fill-opacity: 1">
+							      </g></svg></li-icon></span>
+							</button>
+						</div>
+
+					</div>
+					<!----></div>
+
+				<a data-control-name="edit_top_card" id="ember2713" class="pv-top-card-section__edit pv-top-card-section__right-corner-action button-tertiary-medium-round ember-view">    <span class="svg-icon-wrap"><span class="visually-hidden">Edit Profile</span><li-icon aria-hidden="true" type="pencil-icon"><svg viewBox="0 0 24 24" width="24px" height="24px" x="0" y="0" preserveAspectRatio="xMinYMin meet" class="artdeco-icon"><g class="large-icon" style="fill: currentColor">
+
+      </g></svg></li-icon></span>
+				</a>
+				<div class="pv-top-card-section__body">
+					<div class="pv-top-card-section__information mt3">
+						<h1 class="pv-top-card-section__name Sans-26px-black-85% mb1"> {{jobseeker.firstname}} {{jobseeker.lastname}} </h1>
+
+						<!--<h2 class="pv-top-card-section__headline Sans-19px-black-85% mb1">Actively seeking Software Internship for Summer 2017 | Graduate student at San Jose State University</h2>-->
+
+						<!--<div class="pv-top-card-section__experience truncate">-->
+						<!--<h3 class="pv-top-card-section__company Sans-17px-black-70% mb1 inline-block">-->
+						<!--Bit Brothers-->
+						<!--</h3>-->
+
+						<!--<h3 class="pv-top-card-section__school pv-top-card-section__school&#45;&#45;with-separator Sans-17px-black-70% mb1 inline-block">-->
+						<!--San Jose State University-->
+						<!--</h3>-->
+						<!--</div>-->
+
+						<!--<h3 class="pv-top-card-section__location Sans-17px-black-70% mb1 inline-block">San Jose, California</h3>-->
+
+						<!--<h3 class="pv-top-card-section__connections pv-top-card-section__connections&#45;&#45;with-separator Sans-17px-black-70% mb1 inline-block">-->
+							<!--<span aria-hidden="true">185</span>-->
+							<!--<span class="svg-icon-wrap"><span class="visually-hidden">185 connections</span><li-icon aria-hidden="true" type="people-icon" class="pv-top-card-section__connections-icon" size="small"><svg viewBox="0 0 24 24" width="24px" height="24px" x="0" y="0" preserveAspectRatio="xMinYMin meet" class="artdeco-icon"><g class="small-icon" style="fill-opacity: 1">-->
+      <!--</g></svg></li-icon></span>-->
+						<!--</h3>-->
+					</div>
+
+					<!---->
+
+					<div class="pv-top-card-section__rich-content mt4 ph2">
+						<p id="ember2722" class="pv-top-card-section__summary Sans-15px-black-55% mt5 pt5 ember-view">
+						<div class="truncate-multiline--truncation-target">
+							<span>
+								<!--  graduate steudnte descsiption optional place   -->
+							</span>
+							<span class="truncate-multiline--last-line-wrapper">
+							<span class="truncate-multiline--last-line">
+								{{jobseeker.selfIntroduction}}
+							</span>
+							<button class="truncate-multiline--button-hidden" data-ember-action="" data-ember-action-2723="2723">
+
+  							</button></span></div>
+
+						<h3 ng-if=" noselfIntroduction " style="color:red">You have no self introduction</h3>
+						</p>
+
+
+					</div>
+				</div>
+			</section>
+
+
+			<section id="ember3083" class="pv-profile-section artdeco-container-card pv-pcm-section pv-pcm-section--hidden ember-view"><!---->
+				<!----></section>
+
+
+			<!---->
+
+			<div class="profile-detail">
+				<!---->
+				<div style="" id="ember2754" class="pv-deferred-area ember-view">  <div class="pv-deferred-area__content">
+					<!---->
+
+				</div>
+				</div>
+				<div id="ember2763" class="pv-oc ember-view">          <span class="background-details">
+          <section id="ember3223" class="pv-profile-section artdeco-container-card background-section pv-profile-section--reorder-enabled ember-view">  <section id="ember3234" class="pv-profile-section experience-section ember-view">
+				<header class="pv-profile-section__card-header">
+				  <h2 class="pv-profile-section__card-heading Sans-17px-black-85%">
+					Experience
+				  </h2>
+
+				</header>
+
+
+			  <!-- work experience loop -->
+
+			  <ul class="pv-profile-section__section-info section-info pv-profile-section__section-info--has-no-more" ng-repeat="experience in workexperience">
+				  <li id="888496017" class="pv-profile-section__card-item pv-position-entity ember-view">
+					  <div class="pv-entity__actions">
+
+					  </div>
+
+					<a data-control-name="background_details_company" id="ember3249" class="ember-view">    <div class="pv-position-entity__logo pv-entity__logo company-logo">
+						  <span class="glyphicon glyphicon-credit-card" style="font-size: 30px"></span>
+						</div>
+						<div class="pv-entity__summary-info">
+						  <h3 class="Sans-17px-black-85%-semibold"> {{experience.positionHeld}} </h3>
+
+
+						  <h4>
+							<span class="visually-hidden">Company Name</span>
+							<span class="pv-position-entity__secondary-title pv-entity__secondary-title Sans-15px-black-55%">{{experience.company}}</span>
+						  </h4>
+							<h4 class="pv-entity__date-range Sans-15px-black-55%">
+							<span class="visually-hidden">Dates Employed</span>
+							<span>{{experience.startDate}} – {{experience.endDate}}</span>
+						  </h4>
+							<!--<h4 class="pv-entity__duration Sans-15px-black-55% ml1">-->
+							  <!--<span class="visually-hidden">Employment Duration</span>-->
+							  <!--<span class="pv-entity__bullet-item">9 mos</span>-->
+							<!--</h4>-->
+
+						  <!--<h4 class="pv-entity__location Sans-15px-black-55% block">-->
+							<!--<span class="visually-hidden">Location</span>-->
+							<!--<span>Mumbai Area, India</span>-->
+						  <!--</h4>-->
+
+						</div>
+
+					</a>
+					<div class="pv-entity__extra-details">
+					<p id="profile-position-888496017" tabindex="-1" class="pv-entity__description Sans-15px-black-70% mt4">
+
+					</p>
+
+				</div>
+
+			</li>
+		  </ul>
+			  <h3 ng-if=" noworkexperience " style="color:red">You have no work experience</h3>
+
+	<!----></section>
+
+
+			<section id="education-section" class="pv-profile-section education-section ember-view">
+					<header class="pv-profile-section__card-header">
+						  <h2 class="pv-profile-section__card-heading Sans-17px-black-85%">
+							Education
+						  </h2>
+
+					</header>
+
+				<!-- education loop section -->
+
+					<ul ng-repeat="edu in education" class="pv-profile-section__section-info section-info pv-profile-section__section-info--has-no-more">
+						<li id="382448460" class="pv-education-entity pv-profile-section__card-item ember-view">
+
+							<a data-control-name="background_details_school" id="ember3296" class="ember-view">
+							<div class="pv-education-entity__logo pv-entity__logo">
+							  <span class="glyphicon glyphicon-education" style="font-size: 30px"></span>
+							</div>
+
+							<div class="pv-entity__summary-info">
+							  <div class="pv-entity__degree-info">
+								<h3 class="pv-entity__school-name Sans-17px-black-85%-semibold">
+									{{edu.institute}}
+								</h3>
+
+								  <p class="pv-education-entity__secondary-title pv-entity__degree-name pv-entity__secondary-title Sans-15px-black-55%">
+									<span class="visually-hidden">Degree Name</span>
+									<span class="pv-entity__comma-item">{{edu.degree}}</span>
+								  </p>
+							  </div>
+
+								<p class="pv-education-entity__date pv-entity__dates Sans-15px-black-55%">
+								  <span class="visually-hidden">Dates attended or expected graduation</span>
+								  <span>
+										<time>{{edu.startDate}}</time> – <time>{{edu.endDate}}</time>
+								  </span>
+								</p>
+
+
+								<!----></div>
+							</a>
+							  <div class="pv-entity__extra-details">
+								<!--<p tabindex="-1" class="pv-entity__description Sans-15px-black-70% mt4">-->
+								  <!--Graduate Student with dual specialization in 'Enterprise Software Technologies' and 'Cloud Computing and Virtualization'.-->
+								<!--</p>-->
+								  <!---->
+							</div>
+
+						</li>
+
+
+					</ul>
+					<h3 ng-if=" noeducation " style="color:red">You have no education</h3>
+
+
+	  <!----></section>
+
+			  <!----></section>
+
+        </span>
+
+				</div>
+
+				<!-- Add a new skill -->
+
+
+
+				<div style="" id="ember2814" class="pv-deferred-area ember-view">
+					<div class="pv-deferred-area__content">
+						<section id="ember4419" class="pv-profile-section artdeco-container-card pv-featured-skills-section ember-view">
+
+
+							<h2 class="pv-profile-section__card-heading Sans-17px-black-85%">
+								Featured Skills &amp; Endorsements
+							</h2>
+
+
+							<div id="featured-skills-expanded" tabindex="-1">
+
+								<!-- user skills -->
+
+								<ul class="pv-featured-skills-list pv-featured-skills-list--no-highlights section-info no-highlights" ng-repeat="skill in skills">
+
+									<li id="ember4670" class="pv-skill-entity--featured pb5 pv-skill-entity relative ember-view">
+
+										<!---->
+										<div class="pv-skill-entity__header">
+											<div class="tooltip-container">
+
+												<a data-control-name="edit_endorsements" id="ember4671" class="featured-skill-entity-wrapper ember-view">
+													<div class="pv-skill-entity__pill-contents static-pill">
+														<span class="pv-skill-entity__skill-name truncate Sans-15px-black-85%-semibold inline-block ">
+															{{skill.skill}}
+														</span>
+
+
+													</div>
+												</a>
+												<div role="tooltip" id="pv-skill-entity-name-tooltip" class="tooltip">
+													{{skill.skill}}
+												</div>
+											</div>
+											<!---->
+										</div>
+
+
+									</li>
+								</ul>
+								<h3 ng-if=" noskills " style="color:red">You have no skills</h3>
+
+							</div>
+
+
+
+						</section>
+
+
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+
+
+		<div id="ember2900" class="nav-footer nav-footer--static ember-view"><div id="ember2901" class="nav-footer__occlusion-hint ember-view"><!----></div></div>
+	</div>
+
+	<!---->
+
+</div>
+
+
+

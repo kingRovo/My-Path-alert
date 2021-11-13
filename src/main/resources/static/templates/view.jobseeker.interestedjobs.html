@@ -1,0 +1,156 @@
+<link rel="stylesheet" href="https://static.licdn.com/sc/h/br/e5f7dey6qd6ogtlcygkj2j7zt">
+<link rel="stylesheet" href="https://static.licdn.com/sc/h/br/7wwsuzq8ypctt24b973gr089n">
+<link rel="stylesheet" href="https://static.licdn.com/sc/h/br/6x2ymwyjoslvfumll21syppf7">
+
+<style>
+    .axe-violation--level-1:not(:focus):not(:hover) {
+        background-image: repeating-linear-gradient(
+                135deg,
+                transparent,
+                transparent 10%,
+                hsla(0, 0%, 88%, 1.00) 10%,
+                hsla(0, 0%, 62%, 1.00) 15%,
+                hsla(0, 0%, 38%, 1.00) 20%,
+                transparent 20%,
+                transparent 35%
+        ) !important;
+    }
+
+    .axe-violation--level-2:not(:focus):not(:hover) {
+        background-image: repeating-linear-gradient(
+                135deg,
+                transparent,
+                transparent 25%,   /* make transparent portion somewhat wider than total stripe width */
+                hsla(60, 79%, 59%, 1.00) 25%,
+                hsla(60, 79%, 59%, 1.00) 30%,
+                hsla(166, 44%, 65%, 1.00) 30%,
+                hsla(166, 44%, 65%, 1.00) 35%,
+                hsla(240, 26%, 50%, 1.00) 35%,
+                hsla(240, 26%, 50%, 1.00) 40%
+        ) !important;
+    }
+
+    .axe-violation--level-3:not(:focus):not(:hover) {
+        background-image: repeating-linear-gradient(
+                135deg,
+                transparent,
+                transparent 0.5em,
+                hsla(60, 79%, 59%, 1.00) 0.5em,
+                hsla(60, 79%, 59%, 1.00) 1em,
+                hsla(240, 26%, 50%, 1.00) 1em,
+                hsla(240, 26%, 50%, 1.00) 1.5em
+        ) !important;
+    }
+
+    .axe-violation--replaced-element:not(:focus):not(:hover) {
+        box-shadow:
+                0 0 0em 0.35em hsla(240, 26%, 50%, 1.00) inset,
+                0 0 0em 0.35em hsla(60, 79%, 59%, 1.00),
+                0 0 0em 0.70em hsla(240, 26%, 50%, 1.00) !important;
+
+        /* Scale down slightly so box shadow is visible */
+        transition-duration: 0.3s !important;
+        transition-timing-function: ease-in-out !important;
+        transform: scale(0.9) !important;
+    }
+
+</style>
+
+
+
+<div id="ember2108" class="ember-view">
+    <div aria-live="polite" role="status" id="ember2130" class="notification-container ember-view">
+        <!---->
+    </div>
+    <!---->
+    <div class="application-outlet ">
+        <!---->
+        <!---->
+        <aside id="msg-overlay" class="msg-overlay-container ember-view">
+            <!---->
+            <!---->
+            <!---->
+
+            <!---->
+            <!---->
+        </aside>
+        <div class="authentication-outlet">
+            <div id="careers" class=" ghost-animate-in">
+                <!---->
+
+                <section role="main" class="jobs-boxes pt4">
+                    <!---->
+                    <div id="ember5933" class="jobs-jymbii jobs-box jobs-box--full-width jobs-box--with-cta-large ember-view">
+                        <div class="pt5 ph5 pb0">
+                            <h2 class="jobs-box__title jobs-box__title--no-bottom">
+                                Applied jobs result
+                            </h2>
+
+                        </div>
+                        <ul class="card-list card-list--tile jobs-jymbii__list">
+                            <li ng-repeat="job in interestedJobs" id="ember5969" class="jobs-jymbii__list-item jobs-jymbii__list-item--fadein card-list__item job-card job-card--tile ember-view">
+                                <a href="" ng-click="toViewJob(job.requisitionId)" data-control-name="A_jobshome_job_link_click"  id="ember5983" class="job-card__link-wrapper js-focusable-card ember-view">
+                                    <div class="job-card__image-and-sponsored-container">
+                                        <figure class="job-card__logo-wrapper">
+                                            <img class="lazy-image job-card__logo-image loaded" title="CyberCoders" alt="" height="64" width="64" src="{{job.company.logoURL}}">
+                                        </figure>
+
+                                    </div>
+                                    <div class="job-card__content-wrapper">
+                                        <!---->    <span class="visually-hidden">Job Title</span>
+                                        <div class="job-card__title-line">
+                                            <h3 id="ember5993" class="job-card__title ember-view">
+                                                <div class="truncate-multiline--truncation-target">
+                                                    <span class="truncate-multiline--last-line-wrapper">
+                                                        <span>
+                                                            {{job.title}}
+                                                        </span>
+
+                                                </div>
+                                            </h3>
+                                        </div>
+                                        <span class="visually-hidden">Company Name</span>
+                                        <h4 class="job-card__company-name">{{job.company.companyName}}</h4>
+
+                                        <div class="job-card__footer">
+
+                                            <button>
+                                                View Job
+                                            </button>
+                                            </p>
+                                            <!---->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <div id="ember6134" class="fetch-more-items cta-wrap ember-view">
+                            <button >
+                                End of job results
+
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+
+                </section>
+                <!---->
+                <div id="ember6139" class="jobs-box--generic-occludable-area-small ember-view">
+                    <!---->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="li-modal-container"></div>
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <div id="type-ahead-wormhole" class="type-ahead type-ahead-wormhole">
+    </div>
+    <div id="toast-wormhole" class="toast-wormhole">
+    </div>
+    <iframe sandbox="allow-scripts" style="display:none;" src="//radar.cedexis.com/1/11326/radar.html">
+    </iframe>
+</div>

@@ -1,0 +1,292 @@
+<link rel="stylesheet" href="https://static.licdn.com/sc/h/br/e5f7dey6qd6ogtlcygkj2j7zt">
+<link rel="stylesheet" href="https://static.licdn.com/sc/h/br/7wwsuzq8ypctt24b973gr089n">
+<link rel="stylesheet" href="https://static.licdn.com/sc/h/br/6x2ymwyjoslvfumll21syppf7">
+
+<style>
+    .axe-violation--level-1:not(:focus):not(:hover) {
+        background-image: repeating-linear-gradient(
+                135deg,
+                transparent,
+                transparent 10%,
+                hsla(0, 0%, 88%, 1.00) 10%,
+                hsla(0, 0%, 62%, 1.00) 15%,
+                hsla(0, 0%, 38%, 1.00) 20%,
+                transparent 20%,
+                transparent 35%
+        ) !important;
+    }
+
+    .axe-violation--level-2:not(:focus):not(:hover) {
+        background-image: repeating-linear-gradient(
+                135deg,
+                transparent,
+                transparent 25%,   /* make transparent portion somewhat wider than total stripe width */
+                hsla(60, 79%, 59%, 1.00) 25%,
+                hsla(60, 79%, 59%, 1.00) 30%,
+                hsla(166, 44%, 65%, 1.00) 30%,
+                hsla(166, 44%, 65%, 1.00) 35%,
+                hsla(240, 26%, 50%, 1.00) 35%,
+                hsla(240, 26%, 50%, 1.00) 40%
+        ) !important;
+    }
+
+    .axe-violation--level-3:not(:focus):not(:hover) {
+        background-image: repeating-linear-gradient(
+                135deg,
+                transparent,
+                transparent 0.5em,
+                hsla(60, 79%, 59%, 1.00) 0.5em,
+                hsla(60, 79%, 59%, 1.00) 1em,
+                hsla(240, 26%, 50%, 1.00) 1em,
+                hsla(240, 26%, 50%, 1.00) 1.5em
+        ) !important;
+    }
+
+    .axe-violation--replaced-element:not(:focus):not(:hover) {
+        box-shadow:
+                0 0 0em 0.35em hsla(240, 26%, 50%, 1.00) inset,
+                0 0 0em 0.35em hsla(60, 79%, 59%, 1.00),
+                0 0 0em 0.70em hsla(240, 26%, 50%, 1.00) !important;
+
+        /* Scale down slightly so box shadow is visible */
+        transition-duration: 0.3s !important;
+        transition-timing-function: ease-in-out !important;
+        transform: scale(0.9) !important;
+    }
+
+</style>
+
+
+
+
+
+<div id="ember2108" class="ember-view">
+    <div aria-live="polite" role="status" id="ember2130" class="notification-container ember-view">
+        <!---->
+    </div>
+    <!---->
+    <div class="application-outlet " style="top:auto">
+        <div id="ember2150" class="ember-view">
+            <div id="ember2159" class="ember-view"></div>
+            <div id="ember2221" class="ember-view"></div>
+            <div id="ember2236" class="ember-view"></div>
+            <div id="ember2249" class="ember-view"></div>
+            <div id="ember13296" class="ember-view"></div>
+            <div id="ember13303" class="ember-view"></div>
+            <div id="ember2303" class="ember-view"></div>
+
+        </div>
+        <!---->
+        <!---->
+        <aside id="msg-overlay" class="msg-overlay-container ember-view">
+            <!---->
+            <!---->
+            <!---->
+
+            <!---->
+            <!---->
+        </aside>
+        <div class="authentication-outlet">
+            <div id="careers" class="">
+                <!---->
+                <div id="ember22580" class="job-view-layout jobs-details ember-view">
+                    <div id="ember22581" class="ember-view">
+                        <figure class="jobs-hero jobs-hero--no-cover"></figure>
+                    </div>
+                    <div class="neptune-grid ">
+                        <div role="main" class="jobs-details__main-content core-rail">
+                            <!---->
+                            <div id="ember22582" class="jobs-box jobs-box--fadein jobs-box--full-width jobs-details-top-card ember-view">
+                                <div class="jobs-details-top-card__company-logo-container EntityPhoto-square-5">
+                                    <a data-control-name="company_link" id="ember22583" class="ember-view">      <img class="lazy-image jobs-details-top-card__company-logo loaded" alt="" height="122" width="122" src="{{job.company.logoURL}}">
+                                    </a>
+                                </div>
+
+                                <div class="jobs-details-top-card__content-container mt6 pb5">
+                                    <h1 class="Sans-21px-black-85%-dense">
+                                        {{job.title}}
+                                    </h1>
+                                    <h3 class="jobs-details-top-card__company-info Sans-15px-black-55% mt1">
+                                        <span class="a11y-text">Company Name</span>
+                                        <a id="ember22593" class="jobs-details-top-card__company-url ember-view">
+                                            {{job.company.companyName}}
+                                        </a>
+                                        <span class="jobs-details-top-card__bullet">
+                                                  <span class="a11y-text">Company Location</span>
+                                                  {{job.location}}
+                                        </span>
+                                    </h3>
+                                    <div class="jobs-details-top-card__flavors mt4">
+                                        <ul id="ember22594" class="job-flavors ember-view">
+                                            <li class="job-flavors__flavor-wrapper">
+                                                <div id="ember22595" class="job-flavors__flavor job-flavors__flavor--hidden-gem ember-view">
+                                                   <span class="job-flavors__icon svg-icon-wrap">
+                                                      <li-icon aria-hidden="true" type="clock-icon" size="medium">
+                                                         <svg viewBox="0 0 24 24" width="24px" height="24px" x="0" y="0" preserveAspectRatio="xMinYMin meet" class="artdeco-icon">
+                                                         </svg>
+                                                      </li-icon>
+                                                   </span>
+
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="jobs-details-top-card__actions mt4">
+                                        <button ng-if=" !jobisinterested " ng-click="interestedJob()" data-control-name="jobdetails_topcard_save" id="ember22596" class="jobs-s-save--large-secondary mr2 jobs-s-save ember-view">
+                                            <span aria-hidden="true">Interested</span>
+                                        </button>
+                                        <button ng-if=" jobisinterested " ng-click="interestedJob()" data-control-name="jobdetails_topcard_save" id="ember22596" class="jobs-s-save--large-secondary mr2 jobs-s-save ember-view">
+                                            <span aria-hidden="true">Not Interested</span>
+                                        </button>
+
+                                        <!-- display only if user is verified -->
+                                        <div ng-if="jobisapplied && applicationispending" id="ember22625" class="jobs-s-apply--top-card jobs-s-apply--fadein mr2 jobs-s-apply ember-view">
+
+                                            <button ng-click="cancelApplication()" data-control-name="jobdetails_topcard_apply_starters" class="jobs-s-apply__button" data-ember-action="" data-ember-action-22626="22626">
+                                                <span aria-hidden="true">Cancel</span>
+                                            </button>
+                                        </div>
+                                        <div ng-if="jobisapplied && applicationiscancelled" id="ember22625" class="jobs-s-apply--top-card jobs-s-apply--fadein mr2 jobs-s-apply ember-view">
+
+                                            <button data-control-name="jobdetails_topcard_apply_starters" class="jobs-s-apply__button" data-ember-action="" data-ember-action-22626="22626">
+                                                <span aria-hidden="true">Cancelled</span>
+                                            </button>
+                                        </div>
+
+                                        <div ng-if="jobseekerverified && !jobisapplied" id="ember22625" class="jobs-s-apply--top-card jobs-s-apply--fadein mr2 jobs-s-apply ember-view">
+
+                                            <button ng-click="applywithprofile()" data-control-name="jobdetails_topcard_apply_starters" class="jobs-s-apply__button" data-ember-action="" data-ember-action-22626="22626">
+                                                <span aria-hidden="true">Apply with profile</span>
+                                            </button>
+                                        </div>
+
+                                        <!-- apply with resume s3 -->
+                                        <div ng-if="jobseekerverified && !jobisapplied" id="ember22625" class="jobs-s-apply--top-card jobs-s-apply--fadein mr2 jobs-s-apply ember-view">
+                                            <button type="file" ngf-select="uploadFiles($file, $invalidFiles)" accept="application/pdf" ngf-max-height="1000" ngf-max-size="5MB" class="jobs-s-apply__button">
+                                                <span aria-hidden="true">Upload resume</span>
+                                            </button>
+                                        </div>
+                                        <div ng-if="jobseekerverified && !jobisapplied" id="ember22625" class="jobs-s-apply--top-card jobs-s-apply--fadein mr2 jobs-s-apply ember-view">
+                                            <button ng-click="applywithresume()" data-control-name="jobdetails_topcard_apply_starters" class="jobs-s-apply__button" data-ember-action="" data-ember-action-22626="22626">
+                                                <span aria-hidden="true">Apply with resume</span>
+                                            </button>
+                                        </div>
+
+
+                                        <!-- Offer accepted -->
+                                        <div ng-if="jobseekerverified && offeraccepted" id="ember22625" class="jobs-s-apply--top-card jobs-s-apply--fadein mr2 jobs-s-apply ember-view">
+                                            <button class="jobs-s-apply__button">
+                                                <span aria-hidden="true">Offer Accepted</span>
+                                            </button>
+                                        </div>
+
+                                        <!-- Offer rejected -->
+                                        <div ng-if="jobseekerverified && offerrejected" id="ember22625" class="jobs-s-apply--top-card jobs-s-apply--fadein mr2 jobs-s-apply ember-view">
+                                            <button class="jobs-s-apply__button">
+                                                <span aria-hidden="true">Offer Rejected</span>
+                                            </button>
+                                        </div>
+
+                                        <!-- for offered application -->
+                                        <div ng-if="jobseekerverified && jobisoffered && !offeraccepted && !offerrejected" id="ember22625" class="jobs-s-apply--top-card jobs-s-apply--fadein mr2 jobs-s-apply ember-view">
+                                            <button ng-click="acceptOffer(job.applicationId)" class="jobs-s-apply__button">
+                                                <span aria-hidden="true">Accept Offer</span>
+                                            </button>
+                                        </div>
+                                        <div ng-if="jobseekerverified && jobisoffered && !offeraccepted && !offerrejected" id="ember22625" class="jobs-s-apply--top-card jobs-s-apply--fadein mr2 jobs-s-apply ember-view">
+                                            <button ng-click="rejectOffer(job.applicationId)" class="jobs-s-apply__button">
+                                                <span aria-hidden="true">Reject Offer</span>
+                                            </button>
+                                        </div>
+
+
+
+                                    </div>
+                                    <!----><!---->
+                                </div>
+                                <div id="ember22597" class="ember-view">
+                                    <div id="jobs-apply" class="ember-view">
+                                        <!---->
+                                    </div>
+                                </div>
+                                <div id="ember22599" class="ember-view">
+                                    <div id="jobs-apply-starter" class="ember-view">
+                                        <!---->
+                                    </div>
+                                </div>
+                                <!---->
+                            </div>
+                            <div id="ember22601" class="jobs-box jobs-box--fadein jobs-box--full-width jobs-box--with-cta-large jobs-description jobs-description--has-poster ember-view">
+                                <article class="jobs-description__container">
+                                    <div class="jobs-description__content jobs-description-content">
+                                        <div id="job-details" tabindex="-1" class="jobs-box__html-content jobs-description-content__text Sans-15px-black-70%">
+                                            <h2 class="jobs-description-content__title jobs-box__title">Job description</h2>
+                                            <p></p>
+                                            What You Will Be Doing
+                                            <p>
+                                               {{job.jobDescription}}
+                                            </p>
+                                            <br>
+                                            Your responsibilities
+                                            <p>
+                                                {{job.responsibilities}}
+                                            </p>
+                                            </br>
+                                            Skills required for this position
+                                            <div class="pv-skill-entity__header" ng-repeat="skill in job.skills">
+                                                <div class="tooltip-container">
+                                                    <a data-control-name="edit_endorsements" id="ember4671" class="featured-skill-entity-wrapper ember-view">
+                                                        <div class="pv-skill-entity__pill-contents static-pill">
+                                                            <span class="pv-skill-entity__skill-name truncate Sans-15px-black-85%-semibold inline-block ">
+                                                                {{skill.skill}}
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </article>
+                                <div id="ember22603" class="cta-wrap ember-view">
+                                    <button aria-controls="job-details" aria-expanded="true" data-control-name="view_less" class="view-more-icon" data-ember-action="" data-ember-action-22604="22604">
+                                        <span>End of description</span>
+
+                                    </button>
+                                </div>
+                            </div>
+                            <!---->
+
+                            <div id="ember29325" class="jobs-box--generic-occludable-area-large ember-view">
+                                <!---->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="ember22607" class="ember-view">
+                    <div id="ember22608" class="ember-view">
+                        <!---->
+                    </div>
+                </div>
+                <div id="ember22609" class="ember-view">
+                    <div id="jobs-refer-candidate-modal" class="ember-view">
+                        <!---->
+                    </div>
+                </div>
+                <div id="ember22611" class="jobs-box--generic-occludable-area-small ember-view">
+                    <!---->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="li-modal-container"></div>
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <div id="type-ahead-wormhole" class="type-ahead type-ahead-wormhole"></div>
+    <div id="toast-wormhole" class="toast-wormhole"></div>
+    <iframe sandbox="allow-scripts" style="display:none;" src="//radar.cedexis.com/1/11326/radar.html">
+    </iframe>
+</div>
